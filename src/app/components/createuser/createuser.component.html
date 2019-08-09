@@ -1,0 +1,12 @@
+<div>
+<label *ngIf="message != ''">{{message}}</label>
+<form id="myform" #myform="ngForm" (ngSubmit)="process(myform.value)">
+  <label>Enter Name: </label>
+  <input type="text" name="name" ngModel #name="ngModel" class="form-control">
+
+  <label>Enter Job: </label>
+  <input type="text" name="job" ngModel #job="ngModel" class="form-control">
+
+  <input type="submit" value="submit" class="form-control">
+</form>
+</div>
